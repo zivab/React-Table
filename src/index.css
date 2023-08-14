@@ -1,0 +1,122 @@
+@layer tailwind {
+  @tailwind base;
+}
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  --background-start-rgb: 50, 261, 169;
+  --background-end-rgb: 0, 150, 250;
+  --mainColor: #df8800;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.mantine-Paper-root,
+.mantine-Menu-dropdown {
+  border-radius: 20px;
+}
+
+.mantine-UnstyledButton-root:hover,
+.mantine-Menu-item:hover {
+  color: var(--mainColor);
+}
+
+.mantine-Input-rightSection,
+.mantine-Switch-track {
+  cursor: pointer;
+}
+.mantine-m93zsj .mantine-UnstyledButton-root:not([data-disabled='true']) {
+  background: #df8800;
+  color: #fff;
+  border-radius: 10px;
+}
+.mantine-m93zsj .mantine-UnstyledButton-root:hover:not([data-disabled='true']) {
+  background: #ac7720;
+  color: #fff;
+  border-radius: 10px;
+}
+
+button[aria-label='Save'] {
+  margin-left: 0.2rem;
+  color: #fff;
+}
+
+button[aria-label='Save']:hover {
+  margin-left: 0.2rem;
+  color: #df8800;
+  background-color: unset;
+}
+
+.mantine-Badge-rightSection > .mantine-ActionIcon-root:hover {
+  color: #fff;
+  border-radius: 10px;
+}
+
+.mantine-m93zsj .mantine-UnstyledButton-root {
+  border-radius: 10px;
+  background: #836c47;
+  color: rgb(171, 168, 168);
+}
+
+.mantine-1jggmkl {
+  align-items: flex-end;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.mantine-Input-input {
+  border-radius: 10px;
+}
+
+.mantine-TableHeadCell-Content {
+  justify-content: center;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    25deg,
+    hsl(240deg 100% 20%) 5%,
+    hsl(289deg 100% 21%) 24%,
+    hsl(315deg 100% 27%) 35%,
+    hsl(329deg 100% 36%) 45%,
+    hsl(337deg 100% 43%) 54%,
+    hsl(357deg 91% 59%) 63%,
+    hsl(17deg 100% 59%) 72%,
+    hsl(34deg 100% 53%) 81%,
+    hsl(45deg 100% 50%) 90%,
+    hsl(55deg 100% 50%) 100%
+  );
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
